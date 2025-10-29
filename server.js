@@ -83,6 +83,7 @@ app.post('/api/chat/completions', async (req, res) => {
 // Start server
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
-  console.log(`API Key configured: ${!!process.env.OPENAI_API_KEY}`);
+  // WRONG - missing parentheses
+console.log(`Server running on port ${PORT}`);
+console.log(`API Key configured: ${!!process.env.OPENAI_API_KEY}`);
 });
